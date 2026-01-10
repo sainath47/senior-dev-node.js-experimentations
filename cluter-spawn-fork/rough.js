@@ -66,8 +66,3 @@ app.get("/more-delay", async (req, res) => {
 // app.listen(9090, () => {
 //   console.log("hello listening now at 9090");
 // });
-/**
- pm2 tool is based on the cluster module internally, pm2 also provide more additional tools on top of it , like the nodemon restarts the server on the code change similarly, we can write the restart strategies for the clusters,
-
-pm2 also support the advance tools on the logs , like storing them in file & on rotate basis , which i struggled to implement , i dont know why.
- */

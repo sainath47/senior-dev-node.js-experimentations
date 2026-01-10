@@ -14,8 +14,11 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 
 // Routes
+//uploading the videos
 app.post('/user/:id/video', upload.single('video'), VideoController.uploadVideo);
+//staus of the video upload
 app.get('/video/:videoId/status', VideoController.getVideoStatus);
+// get the user videos
 app.get('/user/:id/videos', VideoController.getUserVideos);
 
 // Health check
